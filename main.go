@@ -1,7 +1,7 @@
 package main
 
-import "senKit/pubsub"
+import "senKit/sieveOfEratosthenes"
 
 func main() {
-	pubsub.Example()
+	sieveOfEratosthenes.Example()
 }

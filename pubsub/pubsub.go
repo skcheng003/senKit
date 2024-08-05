@@ -67,6 +67,7 @@ func (p *Publisher) sendTopic(sub chan any, topic topicFunc, v any, wg *sync.Wai
 	if topic != nil && !topic(v) {
 		return
 	}
+	// select 实现管道的超时判断
 	select {
 	case sub <- v:
 	case <-time.After(p.timeout):
