@@ -1,1 +1,3 @@
 # senKit
+---
+### publisher, subscriber model
